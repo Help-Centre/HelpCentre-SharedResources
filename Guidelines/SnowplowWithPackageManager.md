@@ -44,6 +44,7 @@ import {
     trackStructEvent,
     trackSelfDescribingEvent
 } from "@snowplow/browser-tracker";
+...
 trackStructEvent({
   ...eventData,
   context: [
