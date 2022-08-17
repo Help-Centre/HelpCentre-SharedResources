@@ -37,7 +37,7 @@ trackPageView({
 ...
 ```
 
-## How to track custom struct events
+## How to track events
 
 ```typescript
 import {
