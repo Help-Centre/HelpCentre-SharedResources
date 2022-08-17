@@ -1,12 +1,12 @@
-# See Snowplow Tracker Setup documentation
+## See Snowplow Tracker Setup documentation
 
 - https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/
 
-# Install package @snowplow/browser-tracker with preferred package manager
+## Install package @snowplow/browser-tracker with preferred package manager
 
 - https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/
 
-# Initialize Snowplow tracker with imports from @snowplow/browser-tracker
+## Initialize Snowplow tracker with imports from @snowplow/browser-tracker
 
 ```typescript
 import {
@@ -37,7 +37,7 @@ trackPageView({
 ...
 ```
 
-# How to track custom struct events
+## How to track custom struct events
 
 ```typescript
 import {
@@ -58,12 +58,12 @@ trackStructEvent({
 trackSelfDescribingEvent({{eventHere}})
 ```
 
-# Using Plugins
+## Using Plugins
 
-- https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/#using-plugins
+- https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/##using-plugins
 - https://github.com/snowplow/snowplow-javascript-tracker/tree/master/plugins
 
-# Plugins used in Snowplow.js script (https://drive.google.com/file/d/1H62rgXSkBisYekG6thfSJ7gKz42012Fy/view)
+## Plugins used in Snowplow.js script (https://drive.google.com/file/d/1H62rgXSkBisYekG6thfSJ7gKz42012Fy/view)
 
 - browser-plugin-geolocation
 - browser-plugin-performance-timing
