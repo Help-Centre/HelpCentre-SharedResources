@@ -1,10 +1,10 @@
 # See Snowplow Tracker Setup documentation
 
-https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/
+- https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/
 
 # Install package @snowplow/browser-tracker with preferred package manager
 
-https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/
+- https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/
 
 # Initialize Snowplow tracker with imports from @snowplow/browser-tracker
 
@@ -12,9 +12,6 @@ https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-appl
 import {
     enableActivityTracking,
     newTracker,
-    StructuredEvent,
-    trackPageView,
-    trackStructEvent,
 } from "@snowplow/browser-tracker";
 
 ...
@@ -43,6 +40,10 @@ trackPageView({
 # How to track custom struct events
 
 ```typescript
+import {
+    trackStructEvent,
+    trackSelfDescribingEvent
+} from "@snowplow/browser-tracker";
 trackStructEvent({
   ...eventData,
   context: [
@@ -52,15 +53,17 @@ trackStructEvent({
     },
   ],
 });
+...
+trackSelfDescribingEvent({{eventHere}})
 ```
 
 # Using Plugins
 
-https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/#using-plugins
+- https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/#using-plugins
 
 # Plugins used in Snowplow.js script (https://drive.google.com/file/d/1H62rgXSkBisYekG6thfSJ7gKz42012Fy/view)
 
-browser-plugin-geolocation
-browser-plugin-performance-timing
-browser-plugin-link-click-tracking
-browser-plugin-form-tracking
+- browser-plugin-geolocation
+- browser-plugin-performance-timing
+- browser-plugin-link-click-tracking
+- browser-plugin-form-tracking
