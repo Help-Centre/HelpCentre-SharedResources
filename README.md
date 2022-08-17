@@ -1,1 +1,1 @@
-"# HelpCentre-SharedResources" 
+Resources that HelpCentre team shares in Visma.
