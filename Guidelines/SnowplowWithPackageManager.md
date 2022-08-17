@@ -60,6 +60,7 @@ trackSelfDescribingEvent({{eventHere}})
 # Using Plugins
 
 - https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/browser-tracker/browser-tracker-v3-reference/tracker-setup/installing-the-tracker-from-npm/#using-plugins
+- https://github.com/snowplow/snowplow-javascript-tracker/tree/master/plugins
 
 # Plugins used in Snowplow.js script (https://drive.google.com/file/d/1H62rgXSkBisYekG6thfSJ7gKz42012Fy/view)
 
