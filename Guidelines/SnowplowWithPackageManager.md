@@ -30,9 +30,7 @@ enableActivityTracking({
 });
 trackPageView({
     title: "{{titleHere}}",
-    context: [{
-        {{desiredContextSchema}}
-    }],
+    context: [{{desiredContextSchema}}],
 });
 ...
 ```
@@ -47,12 +45,7 @@ import {
 ...
 trackStructEvent({
   ...eventData,
-  context: [
-    {
-      schema: "iglu:com.visma-helpcentre/context_helpcentre/jsonschema/1-0-0",
-      data: context_helpcentre,
-    },
-  ],
+  context: [{{desiredContextSchema}}],
 });
 ...
 trackSelfDescribingEvent({{eventHere}})
